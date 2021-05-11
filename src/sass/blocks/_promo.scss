@@ -1,0 +1,32 @@
+.promo {
+   min-height: 100vh;
+   position: relative;
+   background: url('../img/bg/portfolio-back.jpg') center (center/cover) no-repeat;
+   padding-top: 205px;
+   &__title {
+       margin-top: 10px;
+       width: 600px;
+   }
+   &__btns {
+       margin-top: 25px;
+       width: 248px;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+   }
+   &__link {
+       font-weight: bold;
+       color: #000;
+       text-decoration: none;
+       &:hover {
+           text-decoration: none;
+           color: #000;
+       }
+   }
+   &__subtitle {
+       position: relative;
+       padding-left: 10px;
+       z-index: 2;
+       @include circle;
+   }
+}
