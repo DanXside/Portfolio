@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
 @import 'libs/bootstrap-reboot.min';
+@import 'libs/font';
 
 @import 'basic/variables';
 @import 'basic/mixins';
@@ -18,3 +19,5 @@
 @import 'blocks/promo';
 @import 'blocks/title';
 @import 'blocks/buttons';
+@import 'blocks/sidepanel';
+@import 'blocks/menu';
