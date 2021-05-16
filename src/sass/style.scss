@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
 @import 'libs/bootstrap-reboot.min';
 @import 'libs/font';
 
@@ -7,12 +7,19 @@
 
 * {
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
     width: 1140px;
     margin: 0 auto;
+}
+
+.divider {
+    width: 60px;
+    height: 2px;
+    background: $main-color;
+    margin-top: 25px;
 }
 
 
@@ -21,3 +28,5 @@
 @import 'blocks/buttons';
 @import 'blocks/sidepanel';
 @import 'blocks/menu';
+@import 'blocks/about';
+@import 'blocks/resume';

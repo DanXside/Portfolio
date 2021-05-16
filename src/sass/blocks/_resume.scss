@@ -1,0 +1,162 @@
+.resume {
+    padding: 120px 0 120px 0;
+    &__title {
+        position: relative;
+        text-align: center;
+        @include circle;
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle {
+        margin-top: 6px;
+        text-align: center;
+    }
+    .divider {
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 60px; 
+    }
+    &__education {
+        width: 425px;
+        height: 378px;
+        &-title {
+            padding-left: 35px;
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background-color: $main-color;
+                border-radius: 100%;
+                left: -7px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        &-items {
+            position: relative;
+            padding-left: 35px;
+            &:after {
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: 100%;
+                top: -8px;
+                left: 0;
+                background-color: #000;
+            }
+        }
+        &-item {
+            position: relative;
+            padding-top: 45px;
+            width: 420px;
+            &:before {
+                content: '';
+                position: absolute;
+                height: 1px;
+                width: 35px;
+                background-color: #000;
+                left: -35px;
+                top: 63px;
+            }
+            &-head {
+                position: relative;
+                padding-left: 70px;
+            }
+            &-icons {
+                position: absolute;
+                left: 15px;
+                top: 15px;
+                @include circle;
+                &:before {
+                    left: -15px;
+                    top: -15px;
+                    position: absolute;
+                }
+            }
+            &-descr {
+                padding-top: 15px;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+                color: #000000;
+            }
+        }
+    }
+    &__experience {
+        width: 425px;
+        height: 378px;
+        &-items {
+            padding-top: 100px;
+            position: relative;
+            padding-left: 35px;
+            &:after {
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: 245px;
+                top: -8px;
+                left: 0;
+                background-color: #000;
+            }
+        }
+        &-title {
+            padding-left: 35px;
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background-color: $main-color;
+                border-radius: 100%;
+                left: -7px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        &-item {
+            position: relative;
+            width: 420px;
+            &:before {
+                content: '';
+                position: absolute;
+                height: 1px;
+                width: 35px;
+                background-color: #000;
+                left: -35px;
+                top: 17px;
+            }
+            &-head {
+                position: relative;
+                padding-left: 70px;
+            }
+            &-icons {
+                position: absolute;
+                left: 15px;
+                top: 15px;
+                @include circle;
+                &:before {
+                    left: -15px;
+                    top: -15px;
+                    position: absolute;
+                }
+            }
+            &-descr {
+                padding-top: 15px;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+                color: #000000;
+            }
+        }
+    }
+}
