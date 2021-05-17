@@ -13,4 +13,11 @@ closeElem.addEventListener('click', () => {
 
 overlay.addEventListener('click', () => {
     menu.classList.remove('active');
-})
+});
+
+const counters = document.querySelectorAll('.skills__progress-percents'),
+      lines = document.querySelectorAll('.skills__progress-scale-grey span');
+
+counters.forEach((item, i) => {
+    lines[i].style.width = item.innerHTML;
+});
