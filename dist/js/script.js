@@ -21,3 +21,33 @@ const counters = document.querySelectorAll('.skills__progress-percents'),
 counters.forEach((item, i) => {
     lines[i].style.width = item.innerHTML;
 });
+
+function valideForms(form){
+    $(form).validate({
+      rules: {
+        name: "required",
+        email: {
+          required: true,
+          email: true
+        }
+      },
+      messages: {
+        name: "Пожалуйста, введите своё имя",
+        email: {
+          required: "Пожалуйста, введите свою почту",
+          email: "Неправильно введён адрес почты"
+        }
+      },
+    });
+};
+
+valideForms('#contacts-form');
+
+$('form').submit(function(e) {
+    e.preventDefault();
+    $.ajax({
+      type: "POST",
+      url: "mailer/smart.php",
+      data: $(this).serialize()
+    });
+});
