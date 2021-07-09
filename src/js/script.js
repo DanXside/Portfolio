@@ -1,7 +1,8 @@
 const hamburger = document.querySelector('.hamburger'),
       menu = document.querySelector('.menu'),
       closeElem = document.querySelector('.menu__close'),
-      overlay = document.querySelector('.menu__overlay');
+      overlay = document.querySelector('.menu__overlay'),
+      links = document.querySelectorAll('.menu__links');
 
 hamburger.addEventListener('click', () => {
     menu.classList.add('active');
@@ -13,6 +14,12 @@ closeElem.addEventListener('click', () => {
 
 overlay.addEventListener('click', () => {
     menu.classList.remove('active');
+});
+
+links.forEach((e) => {
+  e.addEventListener('click', () => {
+    menu.classList.remove('active');
+  });
 });
 
 const counters = document.querySelectorAll('.skills__progress-percents'),
